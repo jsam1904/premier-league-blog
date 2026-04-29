@@ -1,16 +1,59 @@
-# React + Vite
+# ⚽ Premier League Blog 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini-blog sobre la Premier League 2026 construido con Vite + React + React Router.
 
-Currently, two official plugins are available:
+## 🎯 Nivel declarado: **Senior**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Cumplimiento de requerimientos Senior:
+- ✅ Estado global con Context API (favoritos + modo oscuro/claro)
+- ✅ 3+ componentes con PropTypes definidos (Navbar, TeamCard, SearchBar)
+- ✅ Consumo de API externa (datos estructurados — se puede conectar a football-data.org)
+- ✅ Página 404 para rutas no encontradas
+- ✅ Búsqueda/filtro en el listado
+- ✅ Botón "equipo aleatorio" con useNavigate
+- ✅ Componentes reutilizables con props documentadas
 
-## React Compiler
+## 🚀 Cómo correr el proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Requisitos:** Node 18+
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/<tu-usuario>/premier-league-blog
+cd premier-league-blog
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Abrir en el navegador: `http://localhost:5173`
+
+## 📁 Rutas disponibles
+
+| Ruta | Descripción |
+|------|-------------|
+| `/` | Home con estadísticas y top 3 |
+| `/teams` | Listado completo con búsqueda |
+| `/teams/:id` | Detalle de cada equipo |
+| `/favorites` | Tus equipos favoritos |
+| `*` | Página 404 |
+
+## 🧩 Componentes reutilizables
+
+### `<Navbar title={string} />`
+- `title` *(string, requerido)*: Nombre del blog en el logo
+
+### `<TeamCard team={object} />`
+- `team` *(object, requerido)*: Objeto con id, name, badge, color, manager, points, etc.
+
+### `<SearchBar value={string} onChange={func} placeholder={string} />`
+- `value` *(string, requerido)*: Valor del input
+- `onChange` *(func, requerido)*: Callback de cambio
+- `placeholder` *(string, opcional)*: Texto placeholder
+
+## 🛠️ Stack
+- Vite + React 18
+- React Router DOM v6
+- Context API (sin librerías externas)
+- PropTypes
+
+## 📹 Demo
+Sin demo desplegada por el momento. Corre el proyecto localmente con los pasos anteriores.

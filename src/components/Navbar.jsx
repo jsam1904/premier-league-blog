@@ -21,14 +21,14 @@ export default function Navbar({ title }) {
   return (
     <nav className="navbar">
       <Link to="/" className="nav-logo">
-        ⚽ {title}
+        {title}
       </Link>
 
       <div className="nav-links">
         <Link to="/">Inicio</Link>
         <Link to="/teams">Equipos</Link>
         <Link to="/favorites">
-          ❤️ Favoritos
+          Favoritos
           {favorites.length > 0 && (
             <span className="badge">{favorites.length}</span>
           )}
@@ -37,7 +37,7 @@ export default function Navbar({ title }) {
 
       <div className="nav-actions">
         <button onClick={goRandom} className="btn-random">
-          🎲 Aleatorio
+          Aleatorio
         </button>
         <button onClick={toggleDarkMode} className="btn-theme">
           {darkMode ? "☀️" : "🌙"}
