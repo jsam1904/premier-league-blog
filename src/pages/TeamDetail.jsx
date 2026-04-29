@@ -13,7 +13,7 @@ export default function TeamDetail() {
   if (notFound) {
     return (
       <main className="not-found">
-        <h1>🏟️ Equipo no encontrado</h1>
+        <h1>Equipo no encontrado</h1>
         <p>El equipo con ID #{id} no existe en nuestra base de datos.</p>
         <Link to="/teams" className="btn-primary">Volver al listado</Link>
       </main>

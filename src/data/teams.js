@@ -253,7 +253,7 @@ export const teams = [
 
 export const leagueInfo = {
   season: "2025/26",
-  matchday: 36,
+  matchday: 34,
   totalMatchdays: 38,
   topScorer: { name: "Erling Haaland", team: "Manchester City", goals: 24 },
   topAssists: { name: "Bruno Fernandes", team: "Manchester United", assists: 19 },

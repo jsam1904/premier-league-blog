@@ -7,18 +7,19 @@ Mini-blog sobre la Premier League 2026 construido con Vite + React + React Route
 ### Cumplimiento de requerimientos Senior:
 - ✅ Estado global con Context API (favoritos + modo oscuro/claro)
 - ✅ 3+ componentes con PropTypes definidos (Navbar, TeamCard, SearchBar)
-- ✅ Consumo de API externa (datos estructurados — se puede conectar a football-data.org)
+- ✅ Consumo de API externa real — [football-data.org](https://www.football-data.org/) para escudos oficiales de equipos
 - ✅ Página 404 para rutas no encontradas
 - ✅ Búsqueda/filtro en el listado
 - ✅ Botón "equipo aleatorio" con useNavigate
 - ✅ Componentes reutilizables con props documentadas
+- ✅ Dark/light mode con CSS variables aplicado a todo el documento
 
 ## 🚀 Cómo correr el proyecto
 
 **Requisitos:** Node 18+
 
 ```bash
-git clone https://github.com/<tu-usuario>/premier-league-blog
+git clone https://github.com/jsam1904/premier-league-blog
 cd premier-league-blog
 npm install
 npm run dev
@@ -56,4 +57,5 @@ Abrir en el navegador: `http://localhost:5173`
 - PropTypes
 
 ## 📹 Demo
-Sin demo desplegada por el momento. Corre el proyecto localmente con los pasos anteriores.
+
+Ver video en la carpeta [`/demo`](./demo) del repositorio — muestra las rutas `/`, `/teams` y `/teams/:id` funcionando en tiempo real.

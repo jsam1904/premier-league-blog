@@ -29,13 +29,13 @@ export default function TeamList() {
           placeholder="Buscar por equipo, manager o ciudad..."
         />
         <button onClick={goRandom} className="btn-random-list">
-          🎲 Equipo aleatorio
+          Equipo aleatorio
         </button>
       </div>
 
       {teams.length === 0 ? (
         <div className="no-results">
-          <p>😕 No se encontraron equipos para "{query}"</p>
+          <p>No se encontraron equipos para "{query}"</p>
           <button onClick={() => setQuery("")} className="btn-primary">
             Limpiar búsqueda
           </button>
