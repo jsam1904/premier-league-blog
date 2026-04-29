@@ -51,10 +51,14 @@ Abrir en el navegador: `http://localhost:5173`
 - `placeholder` *(string, opcional)*: Texto placeholder
 
 ## 🛠️ Stack
-- Vite + React 18
-- React Router DOM v6
-- Context API (sin librerías externas)
-- PropTypes
+
+| Tecnología | Versión |
+| ----------- | ------- |
+| React | 19.x |
+| React Router DOM | 7.x |
+| Vite | 8.x |
+| PropTypes | 15.x |
+| Context API | (sin librerías externas) |
 
 ## 📹 Demo
 
